@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0%;
+}
+.myGame {
+  width: 100%;
+  height: 100vh;
+}
+canvas {
+  background-color: rgb(45, 45, 45);
+}
+.scoreBoard {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  font: 600 1.2rem "Franlin Gothic Medium";
+  color: white;
+  display: none;
+}
+form {
+  display: flex;
+  height: 60vh;
+  width: 60vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(87, 85, 85);
+  border-radius: 10px;
+}
+form > select,
+form select option {
+  padding: 2vmax;
+  width: 20vw;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: cursive;
+  outline: none;
+  transition: all 0.5s;
+  border: none;
+}
+form input {
+  margin: 2vmax;
+  padding: 2vmax;
+  width: 20vw;
+  cursor: pointer;
+  border: none;
+  color: white;
+  transition: all 0.5s;
+  background-color: indianred;
+  font-size: 1.4rem;
+  font-family: cursive;
+  outline: none;
+}
+form > select:hover {
+  box-shadow: 0 0 10px white;
+}
+form > input :hover {
+  background-color: rgb(194, 27, 91);
+  box-shadow: 0 0 10px white;
+}
+.gameOver {
+  background-color: rgba(122, 122, 122, 0.041);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  height: 100vh;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gameOver button {
+  padding: 1vmax;
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  width: 10vw;
+  background-color: white;
+  font: 900 1.1vmax cursive;
+  transition: all 0.5s;
+}
+.gameOver button:hover {
+  background-color: rgb(30, 30, 34);
+  color: white;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.gameOver > div {
+  margin: 2vmax;
+  color: white;
+  font: 600 1.2vmax cursive;
+}
